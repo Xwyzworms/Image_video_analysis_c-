@@ -32,11 +32,12 @@ void createDifferentMap()
 	cv::waitKey(0);
 }
 
-cv::Mat readImage(std::string path) 
+void readImage(std::string path) 
 {
 	cv::Mat image =  cv::imread(path);
 	cv::Mat image2;
 	cv::Mat image3;
+
 	// Here is Reading Same data block
 	cv::Mat image4(image);
 	cv::Mat image5 = image;
@@ -44,7 +45,15 @@ cv::Mat readImage(std::string path)
 	// Here's Clone ( mean different Memory block)
 	image.copyTo(image2);
 
-	cv::Mat image5 = image3.clone();
+	image3 = image2.clone();
 
-	cv::imshow();
+	cv::flip(image, image,1);
+	
+	cv::imshow("image 1", image);
+	cv::imshow("image 2 Copied 1", image2);
+	cv::imshow("image 3 Copied 2", image3);
+	cv::imshow("image 4", image4); // Same Memory Block
+	cv::imshow("image 5", image5);
+	cv::waitKey(0);
+
 }

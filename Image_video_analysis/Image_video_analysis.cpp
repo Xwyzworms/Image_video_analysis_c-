@@ -7,6 +7,9 @@
 #include <opencv2/imgproc.hpp>
 #include <string>
 #include "Mat_ds.h"
+#include "Roi.h"
+#include "Pixels.h"
+
 
 int main()
 {
@@ -17,15 +20,29 @@ int main()
     //cv::resize(image, image, { 500, 500 }, 0, 0, cv::INTER_NEAREST);
 
     //cv::imshow("image", image);
+    //createDifferentMap();
+    //readImage("puppy.bmp");
+    //cv::Mat grey = createImage();
+    //cv::imshow("Image Gery", grey);
+    //cv::waitKey(0);
+
+    // Read the Image in Gray Scale
+    //cv::Mat image1 = cv::imread("puppy.bmp", cv::IMREAD_GRAYSCALE);
+    //cv::Mat image2;
+    //image1.convertTo(image2, CV_32F, 1 / 255, 0);
+
+    //cv::imshow("ConvertedImage", image2);
+    //cv::waitKey(0);
+    
+    //drawROIFromImage("puppy.bmp", "smalllogo.png");
+    //cv::waitKey(0);
+
+    //maskImage("puppy.bmp", "smalllogo.png");
 
 
+    // ????
+    addImageNoise("puppy.bmp", 1000);
 
 
-    createDifferentMap();
-   
-
-
-
-    cv::waitKey(0);
     return 0;
 }

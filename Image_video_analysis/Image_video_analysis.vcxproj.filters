@@ -13,18 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Basics">
+      <UniqueIdentifier>{22f3cf8c-f864-4283-a0bd-a1fb48308b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Basics">
+      <UniqueIdentifier>{8c42b4aa-52c5-4570-9dad-40963dd8df9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PixelManipulation">
+      <UniqueIdentifier>{5a7dbeeb-aa32-4ad1-878c-f6db9afc0076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PixelManipulation">
+      <UniqueIdentifier>{5fa47c9d-464c-424f-9095-aee8a24de72e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Image_video_analysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Mat_ds.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Roi.cpp">
+      <Filter>Source Files\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Pixels.cpp">
+      <Filter>Source Files\PixelManipulation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mat_ds.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Roi.h">
+      <Filter>Header Files\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Pixels.h">
+      <Filter>Header Files\PixelManipulation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

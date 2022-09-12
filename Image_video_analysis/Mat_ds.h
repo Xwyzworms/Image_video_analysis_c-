@@ -5,5 +5,5 @@
 #include <string>
 
 cv::Mat createImage();
-cv::Mat readImage(std::string path);
+void readImage(std::string path);
 void createDifferentMap();
