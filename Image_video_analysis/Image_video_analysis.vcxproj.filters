@@ -39,6 +39,9 @@
     <ClCompile Include="Pixels.cpp">
       <Filter>Source Files\PixelManipulation</Filter>
     </ClCompile>
+    <ClCompile Include="PointerImageScanner.cpp">
+      <Filter>Source Files\PixelManipulation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mat_ds.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files\Basics</Filter>
     </ClInclude>
     <ClInclude Include="Pixels.h">
+      <Filter>Header Files\PixelManipulation</Filter>
+    </ClInclude>
+    <ClInclude Include="PointerImageScanner.h">
       <Filter>Header Files\PixelManipulation</Filter>
     </ClInclude>
   </ItemGroup>

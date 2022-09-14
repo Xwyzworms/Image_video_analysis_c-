@@ -135,11 +135,13 @@
     <ClCompile Include="Image_video_analysis.cpp" />
     <ClCompile Include="Mat_ds.cpp" />
     <ClCompile Include="Pixels.cpp" />
+    <ClCompile Include="PointerImageScanner.cpp" />
     <ClCompile Include="Roi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mat_ds.h" />
     <ClInclude Include="Pixels.h" />
+    <ClInclude Include="PointerImageScanner.h" />
     <ClInclude Include="Roi.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

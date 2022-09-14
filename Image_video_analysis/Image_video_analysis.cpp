@@ -9,6 +9,8 @@
 #include "Mat_ds.h"
 #include "Roi.h"
 #include "Pixels.h"
+#include "PointerImageScanner.h"
+
 
 
 int main()
@@ -41,7 +43,10 @@ int main()
 
 
     // ????
-    addImageNoise("puppy.bmp", 1000);
+    //addImageNoise("puppy.bmp", 1000);
+    cv::Mat img = cv::imread("puppy.bmp");
+    cv::Mat temp;
+    colorReduceTwo(img, temp, 63);
 
 
     return 0;
