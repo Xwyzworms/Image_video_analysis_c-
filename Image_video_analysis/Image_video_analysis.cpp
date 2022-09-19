@@ -46,7 +46,7 @@ int main()
     //addImageNoise("puppy.bmp", 1000);
     cv::Mat img = cv::imread("puppy.bmp");
     cv::Mat temp;
-    colorReduceTwo(img, temp, 63);
+    colorReduceDereference(img, 63);
 
 
     return 0;
